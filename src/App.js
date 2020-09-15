@@ -9,6 +9,9 @@ import { DonutConfig } from './pie.navigation';
 import { Settings } from './pie.format';
 import Animation from './Assets/animation.gif';
 import { ScrollTo } from './components/ScrollTo';
+import More from 'highcharts/highcharts-more';
+
+More(Highcharts);
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -50,9 +53,9 @@ function App() {
               } else if (e.point.name === 'ONLINE REFERRAL SYSTEM') {
                 setModal(true);
                 setAction('ONLINE REFERRAL SYSTEM');
-              } else if (e.point.name === 'EARLY WINNING') {
+              } else if (e.point.name === 'EARLY WARNING') {
                 setModal(true);
-                setAction('EARLY WINNING');
+                setAction('EARLY WARNING');
               } else if (e.point.name === 'DATA & ANALYSIS') {
                 setModal(true);
                 setAction('DATA & ANALYSIS');
@@ -62,9 +65,9 @@ function App() {
               } else if (e.point.name === 'PLANNING') {
                 setModal(true);
                 setAction('PLANNING');
-              } else if (e.point.name === 'RESOURCE MAPPING') {
+              } else if (e.point.name === 'RESOURCE MAP') {
                 setModal(true);
-                setAction('RESOURCE MAPPING');
+                setAction('RESOURCE MAP');
               }
             },
           },
@@ -96,9 +99,9 @@ function App() {
             </>
           ) : (
             <>
-              {action === 'RESOURCE MAPPING' ||
+              {action === 'RESOURCE MAP' ||
               action === 'ONLINE REFERRAL SYSTEM' ||
-              action === 'EARLY WINNING' ? (
+              action === 'EARLY WARNING' ? (
                 <>
                   <div className='d-flex justify-content-center align-items-center flex-column'>
                     <h5>{action}</h5>

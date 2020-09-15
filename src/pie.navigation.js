@@ -3,13 +3,18 @@ export const DonutConfig = {
     borderWidth: 0,
     innerSize: 230,
     size: 260,
+
     styles: {
       border: 0,
     },
 
     dataLabels: {
       useHTML: true,
-
+      distance: 0,
+      style: {
+        fontSize: '13px',
+        fontWeight: 900,
+      },
       formatter: function () {
         return `<b>${this.point.name}</b>`;
       },
@@ -42,34 +47,34 @@ export const DonutConfig = {
     },
     data: [
       {
-        name: 'ONLINE REFERRAL SYSTEM',
-        y: 40,
-        color: '#49bea7',
+        name: 'RESOURCE MAP',
+        y: 35,
+        color: '#9dc13b',
       },
       {
-        name: 'EARLY WINNING',
-        y: 40,
-        color: '#2ea4a8',
+        name: 'PLANNING',
+        y: 20,
+        color: '#f89b3f',
+      },
+      {
+        name: 'IMPLEMENTATION',
+        y: 45,
+        color: '#dd8080',
       },
       {
         name: 'DATA & ANALYSIS',
         y: 40,
-        color: '#9dc13b',
-      },
-      {
-        name: 'IMPLEMENTATION',
-        y: 50,
-        color: '#dd8080',
-      },
-      {
-        name: 'PLANNING',
-        y: 30,
-        color: '#f89b3f',
-      },
-      {
-        name: 'RESOURCE MAPPING',
-        y: 35,
         color: '#ae5983',
+      },
+      {
+        name: 'EARLY WARNING',
+        y: 40,
+        color: '#49bea7',
+      },
+      {
+        name: 'ONLINE REFERRAL SYSTEM',
+        y: 40,
+        color: '#2ea4a8',
       },
     ],
   },
