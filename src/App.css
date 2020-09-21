@@ -14,10 +14,10 @@ body {
   background: #f2f2f2;
   font-family: 'Overpass' !important;
 }
-.highcharts-pie-series .highcharts-point {
+/* .highcharts-pie-series .highcharts-point {
   stroke: #f2f2f2;
   stroke-width: 2px;
-}
+} */
 .highcharts-pie-series .highcharts-data-label-connector {
   stroke: silver;
   stroke-dasharray: 2, 2;
