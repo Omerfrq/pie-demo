@@ -7,11 +7,33 @@ import HighchartsReact from 'highcharts-react-official';
 import { Modal, ModalBody } from 'reactstrap';
 import { DonutConfig } from './pie.navigation';
 import { Settings } from './pie.format';
-import Animation from './Assets/animation.gif';
-import { ScrollTo } from './components/ScrollTo';
-import More from 'highcharts/highcharts-more';
 
-More(Highcharts);
+import { ScrollTo } from './components/ScrollTo';
+import { Techinfrastructure } from './components/techinfrastructure';
+import { OnlineReferralSystem } from './components/OnlineReferralSystem';
+import { EarlyWarning } from './components/EarlyWarning';
+import { ResourceMap } from './components/ResourceMap';
+import { Planning } from './components/Planning';
+import { DataAnalysis } from './components/DataAnalysis';
+import { Implementation } from './components/Implementation';
+
+const modalBody = (action) => {
+  if (action === 'TECH INFRASTRUCTURE: PURPLESENSE') {
+    return <Techinfrastructure action={action} />;
+  } else if (action === 'ONLINE REFERRAL SYSTEM') {
+    return <OnlineReferralSystem action={action} />;
+  } else if (action === 'EARLY WARNING') {
+    return <EarlyWarning action={action} />;
+  } else if (action === 'DATA & ANALYSIS') {
+    return <DataAnalysis action={action} />;
+  } else if (action === 'IMPLEMENTATION') {
+    return <Implementation action={action} />;
+  } else if (action === 'PLANNING') {
+    return <Planning action={action} />;
+  } else if (action === 'RESOURCE MAP') {
+    return <ResourceMap action={action} />;
+  }
+};
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -80,73 +102,7 @@ function App() {
   return (
     <div className='App'>
       <Modal isOpen={modal} toggle={toggle}>
-        <ModalBody>
-          {action === 'TECH INFRASTRUCTURE: PURPLESENSE' ? (
-            <>
-              <h5>{action}</h5>
-              <div className='d-flex justify-content-center align-items-center flex-column'>
-                <img className='w-100 h-100' src={Animation} alt='animation' />
-                <small className='text-muted p-2'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tenetur suscipit fuga, neque maxime cupiditate esse nobis quod
-                  est dicta minima nesciunt reprehenderit non expedita
-                  consequatur debitis molestiae possimus alias sed, doloribus
-                  quo architecto obcaecati? Rem tenetur placeat rerum velit esse
-                  voluptatum accusantium tempora cupiditate quos modi, porro,
-                  officia ut expedita.
-                </small>
-              </div>
-            </>
-          ) : (
-            <>
-              {action === 'RESOURCE MAP' ||
-              action === 'ONLINE REFERRAL SYSTEM' ||
-              action === 'EARLY WARNING' ? (
-                <>
-                  <div className='d-flex justify-content-center align-items-center flex-column'>
-                    <h5>{action}</h5>
-                    <img
-                      className='w-100 h-100'
-                      src={Animation}
-                      alt='animation'
-                    />
-                    <small className='text-muted p-2'>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Tenetur suscipit fuga, neque maxime cupiditate esse nobis
-                    </small>
-                    <span className='font-weight-bold'>
-                      Want To Learn More?
-                    </span>
-                  </div>
-                </>
-              ) : (
-                <>
-                  {action === 'DATA & ANALYSIS' ||
-                  action === 'PLANNING' ||
-                  action === 'IMPLEMENTATION' ? (
-                    <>
-                      <div className='d-flex justify-content-center align-items-center flex-column'>
-                        <h5>{action}</h5>
-                        <img
-                          className='w-100 h-100'
-                          src={Animation}
-                          alt='animation'
-                        />
-                        <small className='text-muted p-2'>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Tenetur suscipit fuga, neque maxime cupiditate
-                          esse nobis
-                        </small>
-                      </div>
-                    </>
-                  ) : (
-                    ''
-                  )}
-                </>
-              )}
-            </>
-          )}
-        </ModalBody>
+        <ModalBody>{modalBody(action)}</ModalBody>
       </Modal>
       <HighchartsReact highcharts={Highcharts} options={options} />
       <ScrollTo />

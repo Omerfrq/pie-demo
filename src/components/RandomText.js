@@ -3,17 +3,13 @@ import React from 'react';
 export const RandomText = () => {
   return (
     <div className='p-3'>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aperiam
-      quidem aspernatur ab quia molestias nostrum, incidunt accusantium
-      recusandae alias ipsam vero doloremque natus! Iure sit tempore maiores, a
-      error recusandae quas quam quod at officia quasi repellat enim assumenda
-      blanditiis atque laborum temporibus, corrupti harum nobis consectetur
-      delectus laudantium voluptate tenetur debitis! Quis quisquam laboriosam
-      fuga dolorem recusandae modi esse illum doloremque optio quam, nihil eos
-      odio ut pariatur consequatur, quas iure, necessitatibus ea placeat cumque
-      suscipit vitae voluptate. Molestias laboriosam quod quidem, sequi laborum
-      ab, delectus praesentium iure obcaecati tempore molestiae pariatur maxime
-      cupiditate, quasi culpa similique! Necessitatibus.
+      In order to implement your PurpleSENSE platform with the utmost fidelity,
+      ProUnitas offers the planning, implementation support, and ongoing data
+      analysis on your district’s unique situation. We work with your leadership
+      teams all the way to your front-line staff in ensuring the platform is
+      maximized according to your specific role. Whether you are a district
+      central staff, a principal, or a support staff member on a campus, you can
+      benefit from the PurpleSENSE ecosystem
     </div>
   );
 };
