@@ -5,8 +5,22 @@ export const Techinfrastructure = ({ action }) => {
   return (
     <div>
       <h5>{action}</h5>
-      <img className='w-100 h-100' src={Animation} alt='animation' />
-      <small className='p-2'>
+      <div
+        className='p-1'
+        style={{
+          height: '300px',
+        }}
+      >
+        <img
+          style={{
+            objectFit: 'contain',
+          }}
+          className='w-100 h-100'
+          src={Animation}
+          alt='animation'
+        />
+      </div>
+      <small>
         Each school is outfitted with an online referral, early warning
         platform, and resource map that transforms how school staff
         refer/identify and connect students to social and health services both

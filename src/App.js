@@ -7,8 +7,6 @@ import HighchartsReact from 'highcharts-react-official';
 import { Modal, ModalBody } from 'reactstrap';
 import { DonutConfig } from './pie.navigation';
 import { Settings } from './pie.format';
-
-import { ScrollTo } from './components/ScrollTo';
 import { Techinfrastructure } from './components/techinfrastructure';
 import { OnlineReferralSystem } from './components/OnlineReferralSystem';
 import { EarlyWarning } from './components/EarlyWarning';
@@ -16,6 +14,7 @@ import { ResourceMap } from './components/ResourceMap';
 import { Planning } from './components/Planning';
 import { DataAnalysis } from './components/DataAnalysis';
 import { Implementation } from './components/Implementation';
+import { ComprehensiveSupport } from './components/ComprehensiveSupport';
 
 const modalBody = (action) => {
   if (action === 'TECH INFRASTRUCTURE: PURPLESENSE') {
@@ -32,6 +31,8 @@ const modalBody = (action) => {
     return <Planning action={action} />;
   } else if (action === 'RESOURCE MAP') {
     return <ResourceMap action={action} />;
+  } else if (action === 'COMPREHENSIVE SUPPORT') {
+    return <ComprehensiveSupport action={action} />;
   }
 };
 
@@ -56,6 +57,7 @@ function App() {
       pie: {
         startAngle: 120,
       },
+
       shadow: false,
       borderWidth: 0,
       series: {
@@ -69,7 +71,8 @@ function App() {
           events: {
             click: (e) => {
               if (e.point.name === 'COMPREHENSIVE SUPPORT') {
-                window.location.href = '#comprehensive-support';
+                setModal(true);
+                setAction('COMPREHENSIVE SUPPORT');
               } else if (e.point.name === 'TECH INFRASTRUCTURE: PURPLESENSE') {
                 setModal(true);
                 setAction('TECH INFRASTRUCTURE: PURPLESENSE');
@@ -106,7 +109,6 @@ function App() {
         <ModalBody>{modalBody(action)}</ModalBody>
       </Modal>
       <HighchartsReact highcharts={Highcharts} options={options} />
-      <ScrollTo />
     </div>
   );
 }

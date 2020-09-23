@@ -23,3 +23,7 @@ body {
   stroke-dasharray: 2, 2;
   stroke-width: 2px;
 }
+
+small {
+  text-align: justify;
+}

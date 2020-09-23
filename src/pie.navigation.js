@@ -2,7 +2,7 @@ export const DonutConfig = {
   outerCircle: {
     borderWidth: 0,
     innerSize: 230,
-    size: 260,
+    size: 300,
 
     styles: {
       border: 0,
@@ -36,7 +36,7 @@ export const DonutConfig = {
     borderWidth: 0,
     innerSize: 200,
 
-    size: 230,
+    size: 250,
     dataLabels: {
       useHTML: true,
       inside: true,
