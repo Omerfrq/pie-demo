@@ -62,6 +62,7 @@ function App() {
         dataLabels: {
           enabled: true,
           inside: true,
+          connectorShape: 'straight',
         },
         cursor: 'pointer',
         point: {

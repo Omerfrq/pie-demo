@@ -9,6 +9,7 @@ export const Settings = {
     plotShadow: false,
     polar: true,
   },
+
   credits: {
     enabled: false,
   },
