@@ -53,17 +53,17 @@ export const DonutConfig = {
       },
       {
         name: 'PLANNING',
-        y: 20,
+        y: 30,
         color: '#f89b3f',
       },
       {
         name: 'IMPLEMENTATION',
-        y: 45,
+        y: 40,
         color: '#dd8080',
       },
       {
         name: 'DATA & ANALYSIS',
-        y: 40,
+        y: 25.5,
         color: '#ae5983',
       },
       {
