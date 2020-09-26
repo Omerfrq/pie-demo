@@ -2,7 +2,7 @@ export const DonutConfig = {
   outerCircle: {
     borderWidth: 0,
     innerSize: 230,
-    size: 300,
+    size: 315,
 
     styles: {
       border: 0,
@@ -36,7 +36,7 @@ export const DonutConfig = {
     borderWidth: 0,
     innerSize: 200,
 
-    size: 250,
+    size: 260,
     dataLabels: {
       useHTML: true,
       inside: true,
@@ -67,14 +67,14 @@ export const DonutConfig = {
         color: '#ae5983',
       },
       {
-        name: 'EARLY WARNING',
-        y: 40,
-        color: '#49bea7',
-      },
-      {
         name: 'ONLINE REFERRAL SYSTEM',
         y: 40,
         color: '#2ea4a8',
+      },
+      {
+        name: 'EARLY WARNING',
+        y: 40,
+        color: '#49bea7',
       },
     ],
   },

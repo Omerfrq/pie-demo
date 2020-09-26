@@ -46,7 +46,7 @@ function App() {
   Highcharts.setOptions({
     chart: {
       style: {
-        fontFamily: 'Overpass !important',
+        fontFamily: 'Montserrat !important',
       },
     },
   });
