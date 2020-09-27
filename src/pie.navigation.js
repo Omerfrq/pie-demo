@@ -2,7 +2,7 @@ export const DonutConfig = {
   outerCircle: {
     borderWidth: 0,
     innerSize: 230,
-    size: 315,
+    size: 350,
 
     styles: {
       border: 0,
@@ -10,7 +10,7 @@ export const DonutConfig = {
 
     dataLabels: {
       useHTML: true,
-      distance: 0,
+      distance: 40,
       style: {
         fontSize: '13px',
         fontWeight: 900,
@@ -36,14 +36,18 @@ export const DonutConfig = {
     borderWidth: 0,
     innerSize: 200,
 
-    size: 260,
+    size: 280,
     dataLabels: {
       useHTML: true,
       inside: true,
+      distance: 14,
+      y: -4,
       formatter: function () {
         return this.point.name;
       },
-      color: '#333',
+      style: {
+        fontWeight: '900',
+      },
     },
     data: [
       {
