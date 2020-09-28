@@ -1,8 +1,8 @@
 export const DonutConfig = {
   outerCircle: {
     borderWidth: 0,
-    innerSize: 230,
-    size: 350,
+    innerSize: 240,
+    size: 370,
 
     styles: {
       border: 0,
@@ -10,10 +10,13 @@ export const DonutConfig = {
 
     dataLabels: {
       useHTML: true,
-      distance: 40,
+      distance: 50,
+
       style: {
         fontSize: '13px',
         fontWeight: 900,
+        color: '#7D9563',
+        padding: 30,
       },
       formatter: function () {
         return `<b>${this.point.name}</b>`;
@@ -34,19 +37,17 @@ export const DonutConfig = {
   },
   innerCircle: {
     borderWidth: 0,
-    innerSize: 200,
+    innerSize: 210,
 
-    size: 280,
+    size: 287,
     dataLabels: {
-      useHTML: true,
-      inside: true,
-      distance: 14,
-      y: -4,
+      distance: 38,
+
       formatter: function () {
         return this.point.name;
       },
       style: {
-        fontWeight: '900',
+        color: '#7D9563',
       },
     },
     data: [

@@ -14,6 +14,6 @@ export const Settings = {
     enabled: false,
   },
   title: {
-    text: 'PROUNITAS WHEEL',
+    text: '',
   },
 };

@@ -104,7 +104,7 @@ function App() {
     series: [DonutConfig.outerCircle, DonutConfig.innerCircle],
   };
   return (
-    <div className='App'>
+    <div className='App mt-5'>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalBody>{modalBody(action)}</ModalBody>
       </Modal>
