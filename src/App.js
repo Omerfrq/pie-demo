@@ -55,7 +55,7 @@ function App() {
     ...Settings,
     plotOptions: {
       pie: {
-        startAngle: 120,
+        startAngle: 135,
       },
 
       shadow: false,
@@ -104,11 +104,13 @@ function App() {
     series: [DonutConfig.outerCircle, DonutConfig.innerCircle],
   };
   return (
-    <div className='App mt-5'>
+    <div className='App mt-5 pt-5'>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalBody>{modalBody(action)}</ModalBody>
       </Modal>
-      <HighchartsReact highcharts={Highcharts} options={options} />
+      <div>
+        <HighchartsReact highcharts={Highcharts} options={options} />
+      </div>
     </div>
   );
 }

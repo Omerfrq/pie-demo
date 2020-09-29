@@ -2,7 +2,7 @@ export const DonutConfig = {
   outerCircle: {
     borderWidth: 0,
     innerSize: 240,
-    size: 370,
+    size: 360,
 
     styles: {
       border: 0,
@@ -10,7 +10,7 @@ export const DonutConfig = {
 
     dataLabels: {
       useHTML: true,
-      distance: 50,
+      distance: 5,
 
       style: {
         fontSize: '13px',
@@ -37,28 +37,25 @@ export const DonutConfig = {
   },
   innerCircle: {
     borderWidth: 0,
-    innerSize: 210,
+    innerSize: 200,
 
-    size: 287,
+    size: 300,
     dataLabels: {
-      distance: 38,
+      distance: 65,
+      softConnector: false,
 
+      style: {
+        textOutline: 'none',
+        color: '#7D9563',
+      },
       formatter: function () {
         return this.point.name;
-      },
-      style: {
-        color: '#7D9563',
       },
     },
     data: [
       {
-        name: 'RESOURCE MAP',
-        y: 35,
-        color: '#9dc13b',
-      },
-      {
         name: 'PLANNING',
-        y: 30,
+        y: 20,
         color: '#f89b3f',
       },
       {
@@ -73,13 +70,18 @@ export const DonutConfig = {
       },
       {
         name: 'ONLINE REFERRAL SYSTEM',
-        y: 40,
+        y: 30,
         color: '#2ea4a8',
       },
       {
         name: 'EARLY WARNING',
         y: 40,
         color: '#49bea7',
+      },
+      {
+        name: 'RESOURCE MAP',
+        y: 35,
+        color: '#9dc13b',
       },
     ],
   },
