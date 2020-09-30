@@ -15,7 +15,7 @@ export const DonutConfig = {
       style: {
         fontSize: '13px',
         fontWeight: 900,
-        color: '#7D9563',
+        color: '#6c757d',
         padding: 30,
       },
       formatter: function () {
@@ -46,7 +46,7 @@ export const DonutConfig = {
 
       style: {
         textOutline: 'none',
-        color: '#7D9563',
+        color: '#6c757d',
       },
       formatter: function () {
         return this.point.name;
@@ -65,12 +65,12 @@ export const DonutConfig = {
       },
       {
         name: 'DATA & ANALYSIS',
-        y: 25.5,
+        y: 34.5,
         color: '#ae5983',
       },
       {
         name: 'ONLINE REFERRAL SYSTEM',
-        y: 30,
+        y: 20,
         color: '#2ea4a8',
       },
       {
