@@ -4,8 +4,8 @@ import Animation from '../../Assets/animation.gif';
 export const Techinfrastructure = ({ action }) => {
   return (
     <div>
-      <h5>{action}</h5>
-      <div
+      <h5 className='text-center border-bottom border-muted p-1'>{action}</h5>
+      {/* <div
         className='p-1'
         style={{
           height: '300px',
@@ -19,7 +19,7 @@ export const Techinfrastructure = ({ action }) => {
           src={Animation}
           alt='animation'
         />
-      </div>
+      </div> */}
       <small>
         Each school is outfitted with an online referral, early warning
         platform, and resource map that transforms how school staff
